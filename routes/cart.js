@@ -6,10 +6,11 @@ router.get('/', function(req, res, next) {
   res.send('respond with a resource');
 });
 
-router.get('/add/:ç', function(req, res, next) {
+router.get('/add/:productId', function(req, res, next) {
   const { productId } = req.params;
-
-  res.send('Added to cart');
+  res.send(`Added to cart dss ${productId}`);
 });
+
+
 
 module.exports = router;
